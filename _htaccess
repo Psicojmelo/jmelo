@@ -1,0 +1,57 @@
+# ========== REWRITE RULES ==========
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Bloquear strings suspeitas
+RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|[|%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|[|%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} (\.\.\/|\.\.\\) [OR]
+RewriteCond %{QUERY_STRING} (eval|base64_decode|gzinflate) [NC]
+RewriteRule .* - [F,L]
+
+# HTTPS (ative somente se SSL estiver funcionando)
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+</IfModule>
+# ========== CACHE (performance / Core Web Vitals) ==========
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/webp        "access plus 1 year"
+ExpiresByType image/jpeg        "access plus 1 year"
+ExpiresByType image/png         "access plus 1 year"
+ExpiresByType image/svg+xml     "access plus 1 year"
+ExpiresByType text/css          "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+ExpiresByType text/html         "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+<FilesMatch "\.(webp|jpg|jpeg|png|svg|css|js)$">
+Header set Cache-Control "public, max-age=2592000, immutable"
+</FilesMatch>
+</IfModule>
+
+# ========== COMPRESSÃO (performance) ==========
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml
+AddOutputFilterByType DEFLATE application/javascript application/json
+AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ========== HEADERS DE SEGURANÇA GLOBAIS ==========
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "DENY"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# ========== WWW CANÔNICO (evita conteúdo duplicado para SEO) ==========
+# Ative e ajuste quando o domínio do site estiver definido:
+# <IfModule mod_rewrite.c>
+# RewriteCond %{HTTP_HOST} ^SEU-DOMINIO\.com\.br [NC]
+# RewriteRule ^(.*)$ https://www.SEU-DOMINIO.com.br/$1 [L,R=301]
+# </IfModule>

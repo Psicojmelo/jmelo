@@ -1,0 +1,343 @@
+/* =====================================================
+   PSICÓLOGO JARISMAR DO NASCIMENTO MELO — Psicologia Clínica
+   Paleta: tons pastel (leite, areia, rosé, sálvia, névoa) e marrons (cacau, café, caramelo).
+   Tipografia: Newsreader (títulos) + Nunito Sans (texto).
+   Acessibilidade: foco visível, contraste AA, prefers-reduced-motion.
+===================================================== */
+
+:root {
+  /* Pastéis */
+  --leite: #FBF7F2;
+  --areia: #F3EADF;
+  --rosa: #F4E3D9;
+  --rosa-forte: #EBCFC6;
+  --salvia: #DCE4D2;
+  --salvia-forte: #B7C7AB;
+  --nevoa: #D6E1E4;
+  /* Marrons */
+  --cacau: #4A3329;
+  --cafe: #6E4F3E;
+  --caramelo: #B88A64;
+  --madeira: #D9BFA9;
+
+  --ink: #4A3329;
+  --ink-soft: #7A6254;
+  --line: rgba(110, 79, 62, 0.18);
+  --whats: #4E7C59;
+  --whats-strong: #3F6649;
+
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 2px 10px rgba(74, 51, 41, 0.08);
+  --shadow-md: 0 14px 34px rgba(74, 51, 41, 0.12);
+
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --font-display: 'Newsreader', 'Georgia', serif;
+  --font-body: 'Nunito Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Variáveis do Bootstrap alinhadas à paleta (toasts, badges, links) */
+  --bs-primary: #6E4F3E;
+  --bs-primary-rgb: 110, 79, 62;
+  --bs-success: #4E7C59;
+  --bs-success-rgb: 78, 124, 89;
+  --bs-danger: #A4493F;
+  --bs-danger-rgb: 164, 73, 63;
+  --bs-body-font-family: var(--font-body);
+  --bs-body-color: var(--ink);
+  --bs-body-bg: var(--leite);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 84px; }
+
+body {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--leite);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .h4, .h5 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--cacau);
+}
+
+p { max-width: 62ch; }
+.text-muted { color: var(--ink-soft) !important; }
+
+a { color: var(--cafe); }
+a:hover { color: var(--cacau); }
+
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--caramelo);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.pular-conteudo {
+  position: absolute; left: 12px; top: -60px; z-index: 2000;
+  background: var(--cacau); color: #fff; padding: 0.6rem 1rem; border-radius: var(--radius-sm);
+  transition: top var(--transition);
+}
+.pular-conteudo:focus { top: 12px; color: #fff; }
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+.barra {
+  background: rgba(251, 247, 242, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.navbar-brand { padding: 0; }
+.marca { display: flex; flex-direction: column; line-height: 1.15; }
+.marca-nome { font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; color: var(--cacau); }
+.marca-sub { font-size: 0.78rem; color: var(--ink-soft); }
+
+.nav-link {
+  color: var(--cacau);
+  font-weight: 600;
+  font-size: 0.98rem;
+  padding: 0.5rem 0.85rem !important;
+  border-radius: var(--radius-pill);
+  transition: background-color var(--transition), color var(--transition);
+}
+.nav-link:hover, .nav-link:focus { background: var(--rosa); color: var(--cacau); }
+
+.navbar-toggler { border-color: var(--line); }
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: var(--leite);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    margin-top: 0.75rem;
+    padding: 0.75rem 1rem 1rem;
+  }
+}
+
+/* =====================================================
+   BOTÕES
+===================================================== */
+.btn {
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  padding-inline: 1.3rem;
+  transition: background-color var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+.btn-lg { padding: 0.8rem 1.7rem; font-size: 1.05rem; }
+
+.btn-primary {
+  --bs-btn-bg: var(--cacau);
+  --bs-btn-border-color: var(--cacau);
+  --bs-btn-hover-bg: var(--cafe);
+  --bs-btn-hover-border-color: var(--cafe);
+  --bs-btn-active-bg: var(--cafe);
+  --bs-btn-active-border-color: var(--cafe);
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-color: #fff;
+  --bs-btn-focus-shadow-rgb: 184, 138, 100;
+}
+.btn-wa {
+  --bs-btn-bg: var(--whats);
+  --bs-btn-border-color: var(--whats);
+  --bs-btn-hover-bg: var(--whats-strong);
+  --bs-btn-hover-border-color: var(--whats-strong);
+  --bs-btn-active-bg: var(--whats-strong);
+  --bs-btn-active-border-color: var(--whats-strong);
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-color: #fff;
+  --bs-btn-focus-shadow-rgb: 78, 124, 89;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+.hero {
+  background: var(--areia);
+  padding: 8.5rem 0 5rem;
+}
+.hero-credito { font-size: 0.95rem; font-weight: 600; color: var(--cafe); margin-bottom: 1.25rem; }
+.hero-titulo {
+  font-size: clamp(2.4rem, 3.6vw + 1rem, 4.1rem);
+  line-height: 1.08;
+  font-weight: 500;
+  max-width: 17ch;
+  margin-bottom: 1.5rem;
+}
+.hero-sub { font-size: 1.25rem; color: var(--ink); margin-bottom: 0.75rem; }
+.hero-frase {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.35rem;
+  color: var(--cafe);
+  margin-bottom: 0;
+}
+
+/* Moldura em arco — motivo do projeto (porta, janela, acolhimento) */
+.arco {
+  position: relative;
+  border-radius: 999px 999px var(--radius-lg) var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  background: var(--rosa);
+}
+.arco img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.arco-hero { aspect-ratio: 4 / 5; max-width: 460px; margin-inline: auto; outline: 2px solid var(--caramelo); outline-offset: 12px; }
+.arco-quadro { aspect-ratio: 4 / 5; max-width: 440px; margin-inline: auto; }
+
+/* =====================================================
+   SEÇÕES
+===================================================== */
+.secao { padding: 5.5rem 0; }
+.secao-areia { background: var(--areia); }
+.secao-rosa { background: var(--rosa); }
+
+.titulo-secao { font-size: clamp(1.9rem, 2.2vw + 1rem, 2.8rem); line-height: 1.12; margin-bottom: 1.25rem; }
+.sobretitulo { font-family: var(--font-display); font-style: italic; font-size: 1.15rem; color: var(--cafe); margin-bottom: 0.4rem; }
+.texto-lead { font-size: 1.2rem; color: var(--ink); }
+.cabecalho-secao { max-width: 44rem; margin: 0 auto 3rem; text-align: center; }
+.cabecalho-secao p { margin-inline: auto; }
+
+/* Lista "O que pode ser trazido" */
+.lista-escuta { list-style: none; padding: 0; margin: 2rem 0 0; max-width: 34rem; }
+.lista-escuta li {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 1vw + 1rem, 1.7rem);
+  line-height: 1.3;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--line);
+}
+.lista-escuta li:last-child { border-bottom: 1px solid var(--line); }
+
+/* Ficha profissional (Sobre) */
+.ficha { display: flex; flex-wrap: wrap; gap: 0.5rem 2rem; margin: 0 0 1.75rem; padding: 0.9rem 0; border-block: 1px solid var(--line); }
+.ficha dt { font-size: 0.85rem; font-weight: 600; color: var(--ink-soft); }
+.ficha dd { margin: 0; font-weight: 700; color: var(--cacau); }
+
+.moldura { margin: 0; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); background: var(--salvia); }
+.moldura { aspect-ratio: 10 / 7; }
+.moldura img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/* Faixa de frase "O espaço" */
+.espaco { background: var(--salvia); padding: 3.5rem 0; text-align: center; }
+.espaco p {
+  margin: 0 auto;
+  max-width: 34ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 1.2vw + 1rem, 1.9rem);
+  line-height: 1.35;
+  color: var(--cacau);
+}
+
+/* Processo: sequência real, por isso numerada */
+.passos {
+  list-style: none; counter-reset: passo; padding: 0; margin: 0;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem;
+}
+.passos li { counter-increment: passo; padding-top: 1.25rem; border-top: 2px solid var(--caramelo); }
+.passos li::before {
+  content: counter(passo);
+  display: block;
+  font-family: var(--font-display);
+  font-size: 3rem; line-height: 1; font-weight: 500;
+  color: var(--caramelo);
+  margin-bottom: 0.75rem;
+}
+.passos h3 { font-size: 1.5rem; margin-bottom: 0.6rem; }
+.passos p { margin: 0; }
+
+/* Dúvidas */
+.faq { max-width: 46rem; margin: 0 auto; }
+.faq details { border-top: 1px solid var(--line); padding: 1.1rem 0; }
+.faq details:last-child { border-bottom: 1px solid var(--line); }
+.faq summary {
+  cursor: pointer; list-style: none;
+  font-family: var(--font-display); font-size: 1.3rem; color: var(--cacau);
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: '+'; font-size: 1.6rem; line-height: 1; color: var(--caramelo); transition: transform var(--transition); }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { margin: 0.8rem 0 0; color: var(--ink); }
+
+/* Contato */
+.painel {
+  background: var(--leite);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+.painel-contato { background: var(--salvia); border-color: transparent; }
+.form-label { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.3rem; }
+.form-control {
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  padding: 0.65rem 0.9rem;
+}
+.form-control:focus { border-color: var(--caramelo); box-shadow: 0 0 0 4px rgba(184, 138, 100, 0.22); }
+.form-text { color: var(--ink-soft); }
+.link-discreto { color: var(--cacau); font-weight: 600; }
+
+/* =====================================================
+   RODAPÉ
+===================================================== */
+.bg-footer { background: var(--cacau); color: #F3EADF; padding: 4rem 0 2rem; }
+.bg-footer h3 { color: #fff; font-family: var(--font-display); }
+.bg-footer a { color: #F3EADF; text-decoration: none; }
+.bg-footer a:hover { color: #fff; text-decoration: underline; }
+.bg-footer hr { border-color: rgba(243, 234, 223, 0.25); opacity: 1; }
+
+/* =====================================================
+   BOTÕES FLUTUANTES
+===================================================== */
+.floating-buttons {
+  position: fixed; right: 20px; bottom: max(20px, env(safe-area-inset-bottom));
+  display: flex; flex-direction: column; gap: 14px; z-index: 1000;
+}
+.btn-float {
+  width: 58px; height: 58px; border-radius: 50%; padding: 0;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow-md);
+}
+
+/* =====================================================
+   REVELAÇÃO SUAVE — só no cabeçalho de seções
+===================================================== */
+@media (prefers-reduced-motion: no-preference) {
+  .js .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .js .reveal.is-visible { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+@media (max-width: 991px) {
+  .hero { padding: 7rem 0 3.5rem; }
+  .secao { padding: 4rem 0; }
+  .passos { grid-template-columns: 1fr; gap: 2rem; }
+  .arco-hero { max-width: 380px; outline-offset: 8px; }
+}
+@media (max-width: 575px) {
+  .marca-sub { display: none; }
+  .painel { padding: 1.4rem; }
+  .btn-float { width: 52px; height: 52px; }
+  .floating-buttons { right: 14px; }
+}
