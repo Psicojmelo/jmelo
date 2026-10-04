@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Detalhes do consultório: xícara de chá, lenços, livros, vela e planta sobre uma mesa de madeira">
+<defs><linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4DDD1"/><stop offset="1" stop-color="#EFD2C3"/></linearGradient>
+<radialGradient id="g" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFEFC8" stop-opacity=".9"/><stop offset="1" stop-color="#FFEFC8" stop-opacity="0"/></radialGradient></defs>
+<rect width="600" height="600" fill="url(#w)"/>
+<path d="M60 360V190a90 90 0 0 1 180 0V360Z" fill="#F8EBE2"/><path d="M80 360V196a70 70 0 0 1 140 0V360Z" fill="#EBCFC6" opacity=".7"/>
+<path d="M360 330V210a70 70 0 0 1 140 0V330Z" fill="#FBF7F2" stroke="#7A5845" stroke-width="4"/>
+<path d="M376 318V214a54 54 0 0 1 108 0V318Z" fill="#D3DCC9"/><circle cx="430" cy="228" r="20" fill="#F6E7C8"/><path d="M376 318q54-60 108 0Z" fill="#A9B99B"/>
+<rect x="0" y="400" width="600" height="200" fill="#B88A64"/><rect x="0" y="392" width="600" height="20" rx="4" fill="#C99C74"/>
+<g stroke="#9C7050" stroke-opacity=".35" stroke-width="2"><path d="M0 450H600M0 520H600M0 566H600"/></g>
+<!-- livros -->
+<rect x="70" y="352" width="190" height="26" rx="4" fill="#A9B99B"/><rect x="82" y="326" width="170" height="26" rx="4" fill="#F6E7C8"/><rect x="74" y="300" width="176" height="26" rx="4" fill="#8A5E47"/>
+<rect x="96" y="308" width="60" height="4" rx="2" fill="#F6E7C8"/>
+<!-- planta sobre livros -->
+<g><ellipse cx="150" cy="224" rx="12" ry="40" fill="#7E9473" transform="rotate(-14 160 290)"/><ellipse cx="176" cy="220" rx="12" ry="44" fill="#8FA283" transform="rotate(12 160 290)"/><ellipse cx="136" cy="244" rx="11" ry="32" fill="#A9B99B" transform="rotate(-42 160 290)"/><ellipse cx="190" cy="244" rx="11" ry="32" fill="#A9B99B" transform="rotate(42 160 290)"/>
+<path d="M130 286H190L182 300H138Z" fill="#EBCFC6"/></g>
+<!-- lenços -->
+<rect x="290" y="332" width="120" height="62" rx="10" fill="#D5E2E6"/><path d="M330 332q10-30 22-4q12-26 22 4" fill="#fff" stroke="#E4ECEE" stroke-width="2"/>
+<ellipse cx="350" cy="354" rx="30" ry="8" fill="#BFD0D5"/>
+<!-- vela -->
+<circle cx="470" cy="300" r="60" fill="url(#g)"/>
+<rect x="450" y="334" width="42" height="58" rx="8" fill="#FBF7F2"/><rect x="450" y="334" width="42" height="14" rx="6" fill="#EBCFC6"/>
+<path d="M471 330q-8-12 0-26q8 14 0 26Z" fill="#F4C875"/>
+<!-- xícara -->
+<ellipse cx="300" cy="474" rx="110" ry="20" fill="#9C7050" opacity=".35"/>
+<ellipse cx="300" cy="462" rx="104" ry="18" fill="#FBF7F2"/><ellipse cx="300" cy="458" rx="78" ry="12" fill="#F0E5D7"/>
+<path d="M220 396H380V430q0 30-80 30t-80-30Z" fill="#FBF7F2"/><ellipse cx="300" cy="396" rx="80" ry="14" fill="#F0E5D7"/><ellipse cx="300" cy="398" rx="68" ry="10" fill="#B88A64"/>
+<path d="M380 408q40-4 40 22t-44 24" fill="none" stroke="#FBF7F2" stroke-width="12" stroke-linecap="round"/>
+<path d="M276 372q-12-18 0-34t0-30M308 372q-12-18 0-34t0-30M338 372q-12-18 0-34" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".85"/>
+</svg>

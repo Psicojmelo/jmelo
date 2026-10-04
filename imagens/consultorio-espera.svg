@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-label="Sala de espera acolhedora com sofá, plantas e luminárias pendentes">
+<defs><linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6E9DD"/><stop offset="1" stop-color="#EDD9C8"/></linearGradient>
+<linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DDBE9F"/><stop offset="1" stop-color="#C9A17E"/></linearGradient>
+<radialGradient id="g" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFEFC8" stop-opacity=".85"/><stop offset="1" stop-color="#FFEFC8" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="480" fill="url(#w)"/>
+<rect y="350" width="1200" height="130" fill="url(#f)"/><rect y="340" width="1200" height="14" fill="#FBF7F2"/>
+<g stroke="#B88A64" stroke-opacity=".28" stroke-width="2"><path d="M0 400H1200M0 445H1200M260 354V400M700 354V400M980 354V400M120 400V445M520 400V445M860 400V445"/></g>
+<!-- nichos em arco -->
+<path d="M120 300V170a60 60 0 0 1 120 0V300Z" fill="#E3E9DB" stroke="#FBF7F2" stroke-width="8"/><path d="M260 300V170a60 60 0 0 1 120 0V300Z" fill="#EBCFC6" stroke="#FBF7F2" stroke-width="8"/>
+<rect x="120" y="296" width="120" height="8" fill="#7A5845"/><rect x="260" y="296" width="120" height="8" fill="#7A5845"/>
+<path d="M156 296q-10-14 0-30h28q10 16 0 30Z" fill="#FBF7F2"/><path d="M170 268q-10-30 6-52M170 268q18-22 34-24M170 256q-18-14-22-34" fill="none" stroke="#7A5845" stroke-width="3" stroke-linecap="round"/>
+<circle cx="176" cy="216" r="6" fill="#EBCFC6"/><circle cx="204" cy="244" r="6" fill="#EBCFC6"/><circle cx="148" cy="222" r="6" fill="#EBCFC6"/>
+<rect x="290" y="262" width="16" height="34" fill="#A9B99B"/><rect x="308" y="270" width="14" height="26" fill="#F6E7C8"/><rect x="324" y="258" width="16" height="38" fill="#8A5E47"/>
+<!-- pendentes -->
+<line x1="560" y1="0" x2="560" y2="150" stroke="#7A5845" stroke-width="3"/><path d="M526 196a34 34 0 0 1 68 0Z" fill="#F6E7C8" stroke="#B88A64" stroke-width="3"/><circle cx="560" cy="210" r="46" fill="url(#g)"/><line x1="680" y1="0" x2="680" y2="110" stroke="#7A5845" stroke-width="3"/><path d="M646 156a34 34 0 0 1 68 0Z" fill="#F6E7C8" stroke="#B88A64" stroke-width="3"/><circle cx="680" cy="170" r="46" fill="url(#g)"/><line x1="800" y1="0" x2="800" y2="170" stroke="#7A5845" stroke-width="3"/><path d="M766 216a34 34 0 0 1 68 0Z" fill="#F6E7C8" stroke="#B88A64" stroke-width="3"/><circle cx="800" cy="230" r="46" fill="url(#g)"/>
+<!-- janela -->
+<path d="M930 340V170a110 110 0 0 1 220 0V340Z" fill="#DCE7EA" stroke="#FBF7F2" stroke-width="12"/><path d="M1040 60V340M932 200H1148" stroke="#FBF7F2" stroke-width="6"/>
+<path d="M930 300q55-34 110-6t110-8V340H930Z" fill="#CFDCC3" opacity=".85"/><ellipse cx="990" cy="150" rx="30" ry="9" fill="#fff" opacity=".7"/>
+<!-- tapete -->
+<ellipse cx="700" cy="440" rx="440" ry="38" fill="#F0E5D7"/><ellipse cx="700" cy="440" rx="400" ry="29" fill="none" stroke="#D8C3AB" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+<!-- sofá -->
+<rect x="470" y="262" width="450" height="104" rx="40" fill="#E7D3C2"/>
+<rect x="450" y="316" width="490" height="62" rx="24" fill="#D9BFA9"/>
+<rect x="486" y="300" width="205" height="60" rx="22" fill="#F0E0D1"/><rect x="699" y="300" width="205" height="60" rx="22" fill="#F0E0D1"/>
+<rect x="436" y="286" width="46" height="92" rx="20" fill="#D9BFA9"/><rect x="908" y="286" width="46" height="92" rx="20" fill="#D9BFA9"/>
+<rect x="470" y="372" width="12" height="22" rx="3" fill="#5B4032"/><rect x="908" y="372" width="12" height="22" rx="3" fill="#5B4032"/>
+<rect x="520" y="252" width="82" height="82" rx="20" fill="#A67B5B" transform="rotate(-6 561 293)"/><rect x="618" y="268" width="70" height="70" rx="18" fill="#B7C7AB" transform="rotate(5 653 303)"/>
+<rect x="780" y="262" width="76" height="76" rx="20" fill="#EBCFC6" transform="rotate(7 818 300)"/>
+<!-- mesa de centro -->
+<ellipse cx="520" cy="436" rx="22" ry="5" fill="#5B4032" opacity="0"/>
+<!-- planta grande esquerda -->
+<g><g fill="#8FA283"><ellipse cx="60" cy="250" rx="20" ry="84" transform="rotate(-14 70 380)"/><ellipse cx="96" cy="236" rx="19" ry="92" transform="rotate(10 70 380)"/></g>
+<g fill="#A9B99B"><ellipse cx="34" cy="290" rx="18" ry="72" transform="rotate(-38 70 380)"/><ellipse cx="116" cy="288" rx="18" ry="72" transform="rotate(36 70 380)"/></g>
+<ellipse cx="74" cy="240" rx="16" ry="86" fill="#7E9473"/>
+<path d="M30 368H110L98 450H42Z" fill="#EBCFC6"/><rect x="24" y="358" width="92" height="16" rx="7" fill="#E0BDB1"/></g>
+<!-- planta pequena direita -->
+<g><g fill="#8FA283"><ellipse cx="898" cy="372" rx="9" ry="30" transform="rotate(-16 906 420)"/><ellipse cx="914" cy="368" rx="9" ry="32" transform="rotate(14 906 420)"/></g><path d="M890 418H922L918 452H894Z" fill="#B88A64"/></g>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="Duas poltronas lado a lado com mesa de apoio, janela em arco e plantas">
+<defs>
+<linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6ECDF"/><stop offset="1" stop-color="#D8E1CE"/></linearGradient>
+<linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DDBE9F"/><stop offset="1" stop-color="#C9A17E"/></linearGradient>
+<linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCE7EA"/><stop offset="1" stop-color="#F7F2E6"/></linearGradient>
+<radialGradient id="g" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFEFC8" stop-opacity=".9"/><stop offset="1" stop-color="#FFEFC8" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="800" height="560" fill="url(#w)"/>
+<rect y="420" width="800" height="140" fill="url(#f)"/><rect y="410" width="800" height="14" fill="#FBF7F2"/>
+<g stroke="#B88A64" stroke-opacity=".28" stroke-width="2"><path d="M0 470H800M0 520H800M200 424V470M520 424V470M100 470V520M360 470V520M640 470V520"/></g>
+<path d="M270 330V170a130 130 0 0 1 260 0V330Z" fill="url(#sk)" stroke="#FBF7F2" stroke-width="14"/>
+<path d="M400 40V330M272 190H528" stroke="#FBF7F2" stroke-width="7"/>
+<ellipse cx="340" cy="120" rx="38" ry="11" fill="#fff" opacity=".75"/><ellipse cx="470" cy="165" rx="30" ry="9" fill="#fff" opacity=".6"/>
+<path d="M270 280q60-40 130-8t130-10V330H270Z" fill="#CFDCC3" opacity=".85"/>
+<rect x="254" y="330" width="292" height="12" rx="3" fill="#FBF7F2"/>
+<path d="M290 410H510L560 520H240Z" fill="#FFF6E2" opacity=".3"/>
+<!-- estante com livros -->
+<rect x="60" y="120" width="130" height="8" rx="3" fill="#7A5845"/><rect x="60" y="200" width="130" height="8" rx="3" fill="#7A5845"/>
+<g><rect x="72" y="84" width="12" height="36" fill="#EBCFC6"/><rect x="86" y="92" width="11" height="28" fill="#A9B99B"/><rect x="99" y="82" width="13" height="38" fill="#B88A64"/><rect x="114" y="94" width="10" height="26" fill="#F6E7C8"/>
+<path d="M150 120q-12-8-4-24h18q8 16-4 24Z" fill="#FBF7F2"/><path d="M155 98q-6-18 4-30M155 98q10-10 20-12" fill="none" stroke="#7A5845" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="74" y="168" width="40" height="32" rx="3" fill="#D5E2E6"/><rect x="122" y="160" width="12" height="40" fill="#B88A64"/><rect x="136" y="172" width="11" height="28" fill="#EBCFC6"/><circle cx="170" cy="186" r="14" fill="#F6E7C8"/></g>
+<!-- tapete -->
+<ellipse cx="400" cy="500" rx="360" ry="42" fill="#F0E5D7"/><ellipse cx="400" cy="500" rx="320" ry="32" fill="none" stroke="#D8C3AB" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+<!-- poltronas -->
+<g transform="translate(188 282) rotate(-2 75 190)">
+<rect x="15" y="0" width="120" height="124" rx="42" fill="#9AAE8D"/>
+<rect x="30" y="16" width="90" height="96" rx="30" fill="#B7C7AB"/>
+<rect x="0" y="74" width="34" height="100" rx="15" fill="#9AAE8D"/><rect x="116" y="74" width="34" height="100" rx="15" fill="#9AAE8D"/>
+<rect x="22" y="104" width="106" height="62" rx="16" fill="#B7C7AB"/>
+<rect x="0" y="150" width="150" height="26" rx="11" fill="#9AAE8D"/>
+<rect x="14" y="174" width="11" height="22" rx="3" fill="#5B4032"/><rect x="125" y="174" width="11" height="22" rx="3" fill="#5B4032"/>
+</g>
+<g transform="translate(462 282) rotate(2 75 190)">
+<rect x="15" y="0" width="120" height="124" rx="42" fill="#8A5E47"/>
+<rect x="30" y="16" width="90" height="96" rx="30" fill="#A67B5B"/>
+<rect x="0" y="74" width="34" height="100" rx="15" fill="#8A5E47"/><rect x="116" y="74" width="34" height="100" rx="15" fill="#8A5E47"/>
+<rect x="22" y="104" width="106" height="62" rx="16" fill="#A67B5B"/>
+<rect x="0" y="150" width="150" height="26" rx="11" fill="#8A5E47"/>
+<rect x="14" y="174" width="11" height="22" rx="3" fill="#5B4032"/><rect x="125" y="174" width="11" height="22" rx="3" fill="#5B4032"/>
+</g>
+<rect x="214" y="304" width="46" height="46" rx="13" fill="#F6E7C8" transform="rotate(-8 237 327)"/>
+<rect x="540" y="304" width="46" height="46" rx="13" fill="#EBCFC6" transform="rotate(8 563 327)"/>
+<!-- mesa -->
+<ellipse cx="400" cy="500" rx="26" ry="6" fill="#5B4032"/><rect x="397" y="430" width="6" height="70" fill="#5B4032"/><ellipse cx="400" cy="430" rx="42" ry="10" fill="#7A5845"/>
+<rect x="378" y="404" width="30" height="24" rx="3" fill="#D5E2E6"/><path d="M386 404q7-14 14 0" fill="#fff" stroke="#C9D6DA"/>
+<rect x="414" y="410" width="17" height="17" rx="3" fill="#FBF7F2"/><path d="M431 414q10 1 0 9" fill="none" stroke="#FBF7F2" stroke-width="3"/>
+<path d="M418 404q-4-9 0-15M425 404q-4-9 0-15" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+<!-- planta direita -->
+<g><g fill="#8FA283"><ellipse cx="716" cy="344" rx="16" ry="64" transform="rotate(-16 724 440)"/><ellipse cx="742" cy="330" rx="15" ry="70" transform="rotate(10 724 440)"/></g>
+<g fill="#A9B99B"><ellipse cx="700" cy="372" rx="14" ry="54" transform="rotate(-38 724 440)"/><ellipse cx="758" cy="368" rx="14" ry="56" transform="rotate(36 724 440)"/></g>
+<ellipse cx="726" cy="340" rx="13" ry="62" fill="#7E9473"/>
+<path d="M690 436H760L750 520H700Z" fill="#EBCFC6"/><rect x="684" y="428" width="82" height="14" rx="6" fill="#E0BDB1"/></g>
+</svg>

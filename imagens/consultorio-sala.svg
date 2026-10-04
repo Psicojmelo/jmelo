@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720" role="img" aria-label="Sala de atendimento com duas poltronas frente a frente, luz natural e plantas">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6E9DD"/><stop offset="1" stop-color="#EBD7C6"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DDBE9F"/><stop offset="1" stop-color="#C9A17E"/></linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D5E2E6"/><stop offset="1" stop-color="#F5F1E4"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFEFC8" stop-opacity=".95"/><stop offset="1" stop-color="#FFEFC8" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="600" height="720" fill="url(#wall)"/>
+  <rect y="540" width="600" height="180" fill="url(#floor)"/>
+  <rect y="530" width="600" height="14" fill="#FBF7F2"/>
+  <g stroke="#B88A64" stroke-opacity=".28" stroke-width="2"><path d="M0 596H600M0 660H600M150 544V596M430 544V596M70 596V660M310 596V660M530 596V660M190 660V720M440 660V720"/></g>
+
+  <!-- janela em arco -->
+  <path d="M70 384V190a90 90 0 0 1 180 0V384Z" fill="url(#sky)" stroke="#FBF7F2" stroke-width="12"/>
+  <path d="M160 100V384M72 260H248" stroke="#FBF7F2" stroke-width="6"/>
+  <ellipse cx="116" cy="170" rx="30" ry="9" fill="#fff" opacity=".75"/><ellipse cx="205" cy="215" rx="26" ry="8" fill="#fff" opacity=".6"/>
+  <path d="M70 330q45-34 90-8t90-12V384H70Z" fill="#CFDCC3" opacity=".8"/>
+  <rect x="56" y="384" width="208" height="12" rx="3" fill="#FBF7F2"/>
+  <!-- cortinas -->
+  <rect x="14" y="66" width="276" height="7" rx="3" fill="#7A5845"/><circle cx="14" cy="69" r="6" fill="#7A5845"/><circle cx="290" cy="69" r="6" fill="#7A5845"/>
+  <path d="M26 74H92V404H26Z" fill="#CAD6BF"/><path d="M230 74H286V404H230Z" fill="#CAD6BF"/>
+  <g stroke="#B6C4A9" stroke-width="3"><path d="M44 74V404M60 74V404M76 74V404M246 74V404M260 74V404M274 74V404"/></g>
+  <path d="M90 74q8 150-4 330" fill="none" stroke="#AEBBA0" stroke-width="2"/>
+
+  <!-- quadro em arco -->
+  <path d="M330 280V190a55 55 0 0 1 110 0V280Z" fill="#FBF7F2" stroke="#7A5845" stroke-width="4"/>
+  <path d="M346 268V192a39 39 0 0 1 78 0V268Z" fill="#EBCFC6"/>
+  <circle cx="385" cy="206" r="19" fill="#F6E7C8"/>
+  <path d="M346 268q39-48 78 0Z" fill="#B9C6AD"/><path d="M346 268q22-24 44-4t34 4Z" fill="#8FA283"/>
+  <!-- prateleira -->
+  <rect x="468" y="204" width="116" height="8" rx="3" fill="#7A5845"/>
+  <rect x="478" y="172" width="11" height="32" fill="#A9B99B"/><rect x="491" y="179" width="10" height="25" fill="#EBCFC6"/><rect x="503" y="169" width="12" height="35" fill="#B88A64"/>
+  <path d="M540 204q-12-8-4-26h18q8 18-4 26Z" fill="#FBF7F2"/>
+  <path d="M545 178q-4-22 6-38M545 178q10-14 22-16M545 164q-10-10-14-22" fill="none" stroke="#7A5845" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="551" cy="140" r="4" fill="#EBCFC6"/><circle cx="567" cy="162" r="4" fill="#EBCFC6"/><circle cx="531" cy="142" r="4" fill="#EBCFC6"/>
+
+  <!-- luz no piso e tapete -->
+  <path d="M96 546H238L330 706H140Z" fill="#FFF6E2" opacity=".32"/>
+  <ellipse cx="300" cy="650" rx="272" ry="60" fill="#F0E5D7"/>
+  <ellipse cx="300" cy="650" rx="234" ry="46" fill="none" stroke="#D8C3AB" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+
+  <!-- planta -->
+  <g transform="translate(0 0)">
+    <g fill="#8FA283"><ellipse cx="40" cy="506" rx="15" ry="52" transform="rotate(-18 50 570)"/><ellipse cx="62" cy="494" rx="14" ry="56" transform="rotate(8 50 570)"/></g>
+    <g fill="#A9B99B"><ellipse cx="30" cy="528" rx="13" ry="44" transform="rotate(-40 50 570)"/><ellipse cx="74" cy="522" rx="13" ry="46" transform="rotate(34 50 570)"/></g>
+    <ellipse cx="50" cy="498" rx="12" ry="50" fill="#7E9473"/>
+    <path d="M18 566H82L74 634H26Z" fill="#EBCFC6"/><rect x="14" y="560" width="72" height="12" rx="5" fill="#E0BDB1"/>
+  </g>
+
+  <!-- poltronas -->
+  <g transform="translate(600 0) scale(-1 1) translate(372 0)"><rect x="92" y="372" width="62" height="196" rx="28" fill="#9AAE8D"/>
+      <rect x="76" y="404" width="44" height="124" rx="22" fill="#B7C7AB" transform="rotate(4 98 466)"/>
+      <rect x="-14" y="518" width="168" height="58" rx="20" fill="#9AAE8D"/>
+      <rect x="-6" y="500" width="126" height="36" rx="16" fill="#B7C7AB"/>
+      <rect x="-8" y="466" width="116" height="26" rx="13" fill="#8CA07F"/>
+      <rect x="-4" y="486" width="14" height="34" rx="6" fill="#8CA07F"/>
+      <rect x="6" y="574" width="10" height="32" rx="3" fill="#5B4032"/>
+      <rect x="124" y="574" width="10" height="32" rx="3" fill="#5B4032"/>
+      <rect x="62" y="446" width="48" height="48" rx="13" fill="#F6E7C8" transform="rotate(-9 86 470)"/></g>
+  <g transform="translate(372 0)"><rect x="92" y="372" width="62" height="196" rx="28" fill="#8A5E47"/>
+      <rect x="76" y="404" width="44" height="124" rx="22" fill="#A67B5B" transform="rotate(4 98 466)"/>
+      <rect x="-14" y="518" width="168" height="58" rx="20" fill="#8A5E47"/>
+      <rect x="-6" y="500" width="126" height="36" rx="16" fill="#A67B5B"/>
+      <rect x="-8" y="466" width="116" height="26" rx="13" fill="#7A5039"/>
+      <rect x="-4" y="486" width="14" height="34" rx="6" fill="#7A5039"/>
+      <rect x="6" y="574" width="10" height="32" rx="3" fill="#5B4032"/>
+      <rect x="124" y="574" width="10" height="32" rx="3" fill="#5B4032"/>
+      <rect x="62" y="446" width="48" height="48" rx="13" fill="#EBCFC6" transform="rotate(-9 86 470)"/></g>
+
+  <!-- mesa lateral -->
+  <ellipse cx="300" cy="604" rx="24" ry="6" fill="#5B4032"/>
+  <rect x="297" y="552" width="6" height="52" fill="#5B4032"/>
+  <ellipse cx="300" cy="552" rx="36" ry="9" fill="#7A5845"/>
+  <rect x="279" y="528" width="26" height="22" rx="3" fill="#D5E2E6"/><path d="M286 528q5-12 10 0" fill="#fff" stroke="#C9D6DA"/>
+  <rect x="312" y="534" width="15" height="15" rx="3" fill="#FBF7F2"/><path d="M327 538q9 1 0 8" fill="none" stroke="#FBF7F2" stroke-width="2.5"/>
+  <path d="M316 528q-4-8 0-14M322 528q-4-8 0-14" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+
+  <!-- luminária -->
+  <circle cx="566" cy="300" r="96" fill="url(#glow)"/>
+  <rect x="564" y="300" width="4" height="302" fill="#5B4032"/><ellipse cx="566" cy="604" rx="22" ry="5" fill="#5B4032"/>
+  <path d="M540 300L592 300L580 248H552Z" fill="#F6E7C8" stroke="#B88A64" stroke-width="2"/>
+</svg>
